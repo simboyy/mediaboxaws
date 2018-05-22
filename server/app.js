@@ -57,7 +57,7 @@ require('./routes').default(app);
 // Start server
 function startServer() {
   app.angularFullstack = server.listen(port, function () {
-    console.log('Express server listening on %d, in %s mode', process.env.PORT, app.get('env'));
+    console.log('Express server listening on %d, in %s mode', port, app.get('env'));
   });
 }
 
